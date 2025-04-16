@@ -40,6 +40,8 @@ tracemake aggregate -o make-trace.json
 
 ### 3. Open the resulting JSON file in Chrome's chrome://tracing or https://ui.perfetto.dev/
 
+You can download a sample trace from [here](https://gist.github.com/kateinoigakukun/995cc68fdfe231ce530229b14db3da41) to try it out.
+
 ![](https://github.com/user-attachments/assets/46ae83a2-3b18-4429-b4e1-ffc01130c067)
 
 ----
