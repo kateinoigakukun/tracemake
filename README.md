@@ -40,13 +40,18 @@ tracemake aggregate -o make-trace.json
 
 ### 3. Open the resulting JSON file in Chrome's chrome://tracing or https://ui.perfetto.dev/
 
+![](https://github.com/user-attachments/assets/46ae83a2-3b18-4429-b4e1-ffc01130c067)
+
+----
+
 The trace file will be created in the current directory as `.make.trace`. You can override this location by setting the `TRACE_FILE` environment variable:
 
 ```bash
 TRACE_FILE=/path/to/trace make SHELL="tracemake shell" -j8
 ```
 
-> **Note**: When running multiple make commands in sequence, make sure to remove the `.make.trace` file before each run to avoid mixing traces from different make processes:
+> [!NOTE]
+> When running multiple make commands in sequence, make sure to remove the `.make.trace` file before each run to avoid mixing traces from different make processes:
 > ```bash
 > rm -f .make.trace
 > make SHELL="tracemake shell" -j8
